@@ -1,6 +1,6 @@
 # MIST
 
-Ce projet a été realisé en equipe, il a pour but de servir a gerer tout ce qui est lié a une affaire poli
+Ce projet a été realisé en equipe, il a pour but de servir a gerer tout ce qui est lié a une affaire policiere
 
 ## prerequis
 * ouvrir GitBash et cloner https://github.com/jln06140/front_fil_rouge.git

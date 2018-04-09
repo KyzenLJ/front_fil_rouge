@@ -22,9 +22,9 @@ Ce projet a été realisé en equipe, il a pour but de servir a gerer tout ce qu
 ## contribution Personnelle 
 
 Dans ce projet, j'ai realisé les sections :
-    * agent : ajout, modification, suppression et lecture
-    * profil associé a l'agent
-    * supect : lecture , ajout
+ * agent : ajout, modification, suppression et lecture
+ * profil associé a l'agent
+ * supect : lecture , ajout
 
 
 Nous avons eu de gros problemes concercant ce projet, nous sommes desolés mais ce dernier n'est pas terminé et ne repond pas encore a sa fonction principale (recherche d'une affaire)

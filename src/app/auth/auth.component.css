@@ -1,0 +1,10 @@
+html {
+    background-color: darkslategray;
+    min-height: 100vh;
+    }
+
+#bloc {
+    position: absolute;
+    top: 35vh;
+    left: 35vw;
+}

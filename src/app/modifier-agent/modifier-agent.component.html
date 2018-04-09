@@ -1,0 +1,64 @@
+
+<div *ngIf="agent" class="col-sm-8 col-sm-offset-2">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="row">
+    <div class="information col-md-5">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" [ngModel]="agent?.nom" id="nom" name="nom" required>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="prenom">Prenom</label>
+          <input type="text" class="form-control" id="prenom" name="prenom" [ngModel]="agent?.prenom" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="adresse">Adresse</label>
+          <input type="text" class="form-control" id="adresse" name="adresse" [ngModel]="agent?.adresse" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="ville">Ville</label>
+          <input type="text" class="form-control" id="ville" name="ville" [ngModel]="agent?.ville" required>
+        </div>
+      </div>
+    </div>
+    <div class="user col-md-5 offset-md-1">
+        <div class="form-group">
+            <div class="form-group">
+              <label for="ville">Email</label>
+              <input type="email" class="form-control" id="email" name="email" [ngModel]="agent?.email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ancienMdp">Ancien mot de passe</label>
+            <input type="password" id="ancienMdp" class="form-control" name="ancienMdp" required>
+          </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" class="form-control" name="password" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirmer mot de passe</label>
+        <input type="password" class="form-control" id="confirmPassword"  name="confirmPassword" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="profil">Profil</label>
+        <select class="form-control" id="profil" [ngModel]="agent?.profil?.libelle" required name="profil">
+          <option value="ADMIN">Admin</option>
+          <option value= "UTILISATEUR">Utilisateur</option>
+        </select>
+      </div>
+     
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+    <a class="btn btn-default" routerLink = "../">Retour a la liste</a>
+  </form>
+  </div>
+  
+  
+  

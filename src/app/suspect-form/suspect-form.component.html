@@ -1,0 +1,49 @@
+<form [formGroup]="formSuspect">
+
+<div class="row">
+
+  <div class="col-6">
+ 
+      <input type="text" class="form-control" formControlName="nomSuspect" id="nomSuspect" placeholder="Nom">
+      <br>
+      <input type="text" class="form-control" formControlName="prenomSuspect" id="prenomSuspect" placeholder="Prénom">
+      <br>
+      <input type="number" class="form-control" formControlName="dateDeNaissanceSuspect" id="dateDeNaissanceSuspect" placeholder="Date de naissance">
+      <br>
+      <input type="text" class="form-control" formControlName="telephoneSuspect" id="telephoneSuspect" placeholder="Telephone">
+      <br>
+      <input type="text" class="form-control" id="parentSuspect" placeholder="Lien de parenté">
+      <br>
+      <input type="text" class="form-control" id="lieuNaissanceSuspect" placeholder="Lieu de naissance">
+      <br>
+      <input type="text" class="form-control" id="lieuHabitationSuspect" placeholder="Lieu de d'habitation">
+
+  </div>
+
+  <div class="col-6">
+
+    <input type="text" class="form-control" id="condamnationSuspect" placeholder="Condamnation">
+    <br>
+    <input type="text" class="form-control" id="voitureSuspect" placeholder="Voiture">
+    <br>
+    <input type="text" class="form-control" id="armeSuspect" placeholder="Arme possédée">
+    <br>
+    <input type="text" class="form-control" id="cheveuxSuspect" placeholder="Couleur de cheveux">
+    <br>
+    <input type="text" class="form-control" id="yeuxSuspect" placeholder="Couleur des yeux">
+    <br>
+    <input type="number" class="form-control" id="documentSuspect" placeholder="Numero de document">
+    <br>
+    <input type="text" class="form-control" id="affaireSuspect" placeholder="Numéro d'affaire"><br>
+
+  </div>
+
+</div>
+
+<div class="row">
+    
+  <button class="col-12 btn btn-info waves-light" type="submit" routerLink="/index/affichage-recherche">VALIDER</button>
+
+</div>
+
+</form>

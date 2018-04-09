@@ -1,0 +1,47 @@
+<h3>Liste des Suspects</h3>
+
+<div class="container ">
+  <div class="header">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+  </div>
+<mat-table class="tableau" #table [dataSource]="dataSource">
+
+  <ng-container matColumnDef="nom">
+    <mat-header-cell *matHeaderCellDef> Nom </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.nom}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="prenom">
+    <mat-header-cell *matHeaderCellDef> Prenom </mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.prenom}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="ville">
+    <mat-header-cell *matHeaderCellDef> Ville </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.ville}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="condamnations">
+    <mat-header-cell *matHeaderCellDef> Condamnations </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.condamnations.length }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="documents">
+    <mat-header-cell *matHeaderCellDef> Docs Administratifs </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.documents.length }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="affaires">
+    <mat-header-cell *matHeaderCellDef> Affaires </mat-header-cell>
+    <mat-cell *matCellDef="let element"> 0 </mat-cell>
+  </ng-container>
+
+
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;" (click) = "rowClicked(row)"></mat-row>
+</mat-table>
+  
+</div>

@@ -1,0 +1,77 @@
+<div class="row">
+
+  <div class="col-12">
+    <h1>MODIFICATION DES DROITS D'UN AGENT</h1>
+  </div>
+
+</div>
+
+<form>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-6">
+
+        <h3>Choisissez un agent</h3>
+
+        <div class="text-center">
+
+          <mat-form-field>
+            <mat-select placeholder="Agent">
+              <mat-option *ngFor="let agent of agents" [value]="agent.nom" (click)="agentSelectionne(agent)">
+                {{ agent.nom }} {{ agent.prenom}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+      </div>
+      
+      <div class="col-6">
+
+        <h3>Choisissez le type de profil pour l'agent</h3>
+
+        <div class="text-center">
+
+          <mat-form-field>
+            <mat-select placeholder="Profil">
+              <mat-option *ngFor="let profil of profils" [value]="profil">
+                {{ profil }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+        </div>
+
+      </div>
+
+      <div class="col-12 text-center">
+
+        <input type="submit" class="btn btn-info justify-content-center" value="Valider">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</form>
+
+<!-- CREATION AGENT -->
+
+<div>
+
+ 
+
+</div>
+
+<!-- SUPPRESSION AGENT -->
+
+<div>
+
+  <app-suppression-agent></app-suppression-agent>
+
+</div>

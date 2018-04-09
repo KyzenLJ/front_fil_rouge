@@ -1,0 +1,28 @@
+<app-nav></app-nav>
+
+<div class="row">
+
+    <div class="col-2" id="dashboard">
+
+        <div>
+            <button class="btn-block btn-lg btn-info waves-light" routerLink="/index">ACCUEIL</button>
+            <br>
+            <button class="btn-block btn-lg btn-info waves-light" routerLink="accordeon-recherche">RECHERCHE</button>
+            <br>
+            <button class="btn-block btn-lg btn-info waves-light" routerLink="profil">PROFIL</button>
+            <br>
+            <button class="btn-block btn-lg btn-info waves-light" routerLink="gestion">GESTION</button>
+            <br>
+        </div>
+
+        <div class="deconnexion">
+            <button class="btn-block btn-lg btn-danger waves-light" (click) = "onDeconnexion()" id="deconnexion" >DECONNEXION</button>
+        </div>
+        
+    </div>
+    <div class="col-10">
+        <router-outlet></router-outlet>
+
+    </div>
+
+</div>

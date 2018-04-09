@@ -1,0 +1,41 @@
+<div class="menuGestion">
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item routerLink="agents">liste des agents</button>
+  <button mat-menu-item routerLink="creationAgent">ajout agent</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+  Agents
+</button>
+
+<mat-menu #appMenu2="matMenu">
+  <button mat-menu-item routerLink="suspects">liste des suspects</button>
+  <button mat-menu-item>ajout suspect</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu2">
+  Suspects
+</button>
+
+<mat-menu #appMenu3="matMenu">
+  <button mat-menu-item routerLink="listeArmes">liste des armes</button>
+  <button mat-menu-item routerLink="ajoutArme">ajouts armes</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu3">
+  Armes
+</button>
+
+<mat-menu #appMenu4="matMenu">
+  <button mat-menu-item routerLink="listeAffaires">liste des affaires</button>
+  <button mat-menu-item routerLink="ajoutAffaire">ajouts affaires</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu4">
+  Affaires
+</button>
+
+</div>
+<div class="contenu">
+<router-outlet></router-outlet>
+</div>

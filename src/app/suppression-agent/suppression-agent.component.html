@@ -1,0 +1,44 @@
+<div class="row">
+
+  <div class="col-12">
+    <h1>SUPPRESSION D'UN AGENT</h1>
+  </div>
+
+</div>
+
+<form>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-12">
+
+        <h3>Choisissez un agent</h3>
+
+        <div class="text-center">
+
+          <mat-form-field>
+            <mat-select placeholder="Agent">
+              <mat-option *ngFor="let agent of agents" [value]="agent" (click)="agentSelect(agent)">
+                {{ agent.nom }} {{agent.prenom}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        </div>
+
+      </div>
+      
+      <div class="col-12 text-center">
+
+        <input type="submit" class="btn btn-danger justify-content-center" (click)="deleteAgent()" value="Suppression de l'agent"> 
+
+      </div>
+
+    </div>
+
+  </div>
+
+</form>
+

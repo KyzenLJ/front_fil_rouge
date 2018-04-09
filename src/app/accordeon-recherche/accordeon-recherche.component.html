@@ -1,0 +1,53 @@
+<h1>RECHERCHE</h1>
+
+<ngb-accordion [closeOthers]="true" activeIds="static-1">
+
+      <ngb-panel id="static-1">
+
+        <ng-template ngbPanelTitle>
+          <h2>SUSPECT</h2>
+        </ng-template>
+
+        <ng-template ngbPanelContent>
+
+          <app-suspect-form></app-suspect-form>
+
+        </ng-template>
+      </ngb-panel>
+ 
+      <ngb-panel id="static-2">
+
+        <ng-template ngbPanelTitle>
+          <h2>ARME</h2>
+        </ng-template>
+
+        <ng-template ngbPanelContent>
+
+          <app-arme-form></app-arme-form>
+
+        </ng-template>
+      </ngb-panel>
+
+      <ngb-panel id="static-3">
+        <ng-template ngbPanelTitle>
+          <h2>VEHICULE</h2>
+        </ng-template>
+        <ng-template ngbPanelContent>
+
+          <app-vehicule-form></app-vehicule-form>
+
+        </ng-template>
+      </ngb-panel>
+
+      <ngb-panel id="static-4">
+        <ng-template ngbPanelTitle>
+          <h2>AFFAIRE</h2>
+        </ng-template>
+        <ng-template ngbPanelContent>
+
+          <app-affaire-form></app-affaire-form>
+
+        </ng-template>
+      </ngb-panel>
+
+</ngb-accordion>

@@ -1,0 +1,15 @@
+index {
+    min-height: 100%;
+}
+
+#dashboard {
+    background-color: #607d8b;
+    margin: 0;
+    padding: 2%;
+    min-height: 86vh;
+}
+
+button {
+    background-color: #fdd835,
+}
+

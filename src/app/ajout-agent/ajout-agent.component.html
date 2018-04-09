@@ -1,0 +1,56 @@
+<div class="col-sm-8 col-sm-offset-2">
+<form (ngSubmit)="onSubmit()" [formGroup]="agentForm">
+  <div class="row">
+  <div class="information col-md-5">
+    <div class="form-group">
+      <label for="nom">Nom</label>
+      <input type="text" class="form-control" id="nom" formControlName="nom">
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <label for="prenom">Prenom</label>
+        <input type="text" class="form-control" id="prenom" formControlName="prenom">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <label for="adresse">Adresse</label>
+        <input type="text" class="form-control" id="adresse" formControlName="adresse">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <label for="ville">Ville</label>
+        <input type="text" class="form-control" id="ville" formControlName="ville">
+      </div>
+    </div>
+  </div>
+  <div class="user col-md-5 offset-md-1">
+      <div class="form-group">
+          <div class="form-group">
+            <label for="ville">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+          </div>
+        </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" class="form-control" formControlName="mdp">
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" class="form-control" id="confirmPassword" formControlName="confMdp">
+    </div>
+    <div class="form-group">
+      <label for="profil">Profil</label>
+      <select class="form-control" id="profil" formControlName="profil" (change)="onChange()">
+        <option>Admin</option>
+        <option>Utilisateur</option>
+      </select>
+    </div>
+   
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+  <a class="btn btn-default" routerLink = "../">Retour a la liste</a>
+</form>
+</div>

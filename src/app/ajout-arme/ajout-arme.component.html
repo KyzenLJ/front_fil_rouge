@@ -1,0 +1,41 @@
+<div class="col-sm-8 col-sm-offset-2">
+
+    <form #armeForm="ngForm" (ngSubmit)="onSubmit(armeForm)" fxLayout="column" class="container">
+
+      <div class="row">
+      <div class="information col-md-5">
+        <div class="form-group">
+          <label for="nomArme">Nom de l'arme</label>
+          <input type="text" class="form-control" id="nomArme" name="nomArme"  [(ngModel)]="arme.nomArme">
+        </div>
+
+        <div class="form-group">
+          <div class="form-group">
+            <label for="typeArme">Type d'arme</label>
+            <input type="text" class="form-control" id="typeArme" name="typeArme"  [(ngModel)]="arme.typeArme">
+          </div>
+        </div>
+        </div>
+        
+      <div class="user col-md-5 offset-md-1">
+          <div class="form-group">
+              <div class="form-group">
+                <label for="typeMunition">Type de munition</label>
+                <input type="typeMunition" class="form-control" id="typeMunition" name="typeMunition"  [(ngModel)]="arme.typeMunition">
+              </div>
+            </div>
+
+        <div class="form-group">
+          <label for="numeroSerieArme">Numero de série</label>
+          <input type="numeroSerieArme" id="numeroSerieArme" class="form-control" name="numeroSerieArme" [(ngModel)]="arme.numeroSerieArme">
+        </div>
+        
+      </div>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+           
+    </form>
+
+    </div>

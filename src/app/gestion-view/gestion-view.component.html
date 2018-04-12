@@ -19,7 +19,7 @@
 
 <mat-menu #appMenu3="matMenu">
   <button mat-menu-item routerLink="listeArmes">liste des armes</button>
-  <button mat-menu-item routerLink="ajoutArme">ajouts armes</button>
+  <button mat-menu-item routerLink="ajoutArme">ajout armes</button>
 </mat-menu>
 
 <button mat-icon-button [matMenuTriggerFor]="appMenu3">
@@ -28,11 +28,20 @@
 
 <mat-menu #appMenu4="matMenu">
   <button mat-menu-item routerLink="listeAffaires">liste des affaires</button>
-  <button mat-menu-item routerLink="ajoutAffaire">ajouts affaires</button>
+  <button mat-menu-item routerLink="ajoutAffaire">ajout affaires</button>
 </mat-menu>
 
 <button mat-icon-button [matMenuTriggerFor]="appMenu4">
   Affaires
+</button>
+
+<mat-menu #appMenu5="matMenu">
+  <button mat-menu-item routerLink="listeVehicules">liste des véhicules</button>
+  <button mat-menu-item routerLink="ajoutVehicule">ajout véhicule</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu5">
+  Véhicules
 </button>
 
 </div>

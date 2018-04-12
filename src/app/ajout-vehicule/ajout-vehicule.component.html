@@ -1,0 +1,41 @@
+<div class="col-sm-8 col-sm-offset-2">
+
+  <form #vehiculeForm="ngForm" (ngSubmit)="onSubmit(vehiculeForm)" fxLayout="column" class="container">
+
+    <div class="row">
+    <div class="information col-md-5">
+      <div class="form-group">
+        <label for="marqueVehicule">Marque du véhicule</label>
+        <input type="text" class="form-control" id="marqueVehicule" name="marqueVehicule"  [(ngModel)]="vehicule.marqueVehicule">
+      </div>
+
+      <div class="form-group">
+        <div class="form-group">
+          <label for="modeleVehicule">Modèle du véhicule</label>
+          <input type="text" class="form-control" id="modeleVehicule" name="modeleVehicule"  [(ngModel)]="vehicule.modeleVehicule">
+        </div>
+      </div>
+      </div>
+      
+    <div class="user col-md-5 offset-md-1">
+        <div class="form-group">
+            <div class="form-group">
+              <label for="couleurVehicule">Couleur du véhicule</label>
+              <input type="couleurVehicule" class="form-control" id="couleurVehicule" name="couleurVehicule"  [(ngModel)]="vehicule.couleurVehicule">
+            </div>
+          </div>
+
+      <div class="form-group">
+        <label for="immatriculationVehicule">Immatriculation du véhicule</label>
+        <input type="immatriculationVehicule" id="immatriculationVehicule" class="form-control" name="immatriculationVehicule" [(ngModel)]="vehicule.immatriculationVehicule">
+      </div>
+      
+    </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+         
+  </form>
+
+  </div>

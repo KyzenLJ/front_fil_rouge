@@ -50,6 +50,8 @@ import { AjoutArmeComponent } from './ajout-arme/ajout-arme.component';
 import { AjoutAffaireComponent } from './ajout-affaire/ajout-affaire.component';
 import { AffairesService } from './affaires.service';
 import { ArmesService } from './armes.service';
+import { AjoutVehiculeComponent } from './ajout-vehicule/ajout-vehicule.component';
+import { ListeVehiculesComponent } from './liste-vehicules/liste-vehicules.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +83,8 @@ import { ArmesService } from './armes.service';
     ListeArmesComponent,
     AjoutArmeComponent,
     AjoutAffaireComponent,
+    AjoutVehiculeComponent,
+    ListeVehiculesComponent,
     ],
 
   imports: [

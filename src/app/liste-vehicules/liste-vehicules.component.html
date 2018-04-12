@@ -1,0 +1,52 @@
+<div class="example-container mat-elevation-z8">
+  <div class="example-header">
+    <mat-form-field>
+      <input matInput placeholder="Filtre">
+    </mat-form-field>
+  </div>
+  <mat-table #table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="marqueVeicule">
+      <mat-header-cell *matHeaderCellDef> Marque </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.marqueVehicule}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="modeleVehicule">
+      <mat-header-cell *matHeaderCellDef> Modèle </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.modeleVehicule }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="couleurVehicule">
+      <mat-header-cell *matHeaderCellDef> Couleur </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.couleurVehicule}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="immatriculationVehicule">
+      <mat-header-cell *matHeaderCellDef> Immatriculation </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.immatriculationVehicule}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="edit">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <button class="btn">Modifier</button>
+      </mat-cell>
+    </ng-container>
+    
+    <ng-container matColumnDef="delete">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <button class="btn">Supprimer</button>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+
+  </mat-table>
+
+  <mat-paginator #paginator 
+  
+      [length]="5" [pageSize]="10" [pageSizeOptions]="[10, 20, 30]">
+  
+  </mat-paginator>

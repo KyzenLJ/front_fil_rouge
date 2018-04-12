@@ -28,6 +28,8 @@ import { ModifierAgentComponent } from './modifier-agent/modifier-agent.componen
 import { SuspectViewComponent } from './suspect-view/suspect-view.component';
 import { AjoutArmeComponent } from './ajout-arme/ajout-arme.component';
 import { ListeArmesComponent } from './liste-armes/liste-armes.component';
+import { AjoutVehiculeComponent } from './ajout-vehicule/ajout-vehicule.component';
+import { ListeVehiculesComponent } from './liste-vehicules/liste-vehicules.component';
 import { ListeAffairesComponent } from './liste-affaires/liste-affaires.component';
 import { AjoutAffaireComponent } from './ajout-affaire/ajout-affaire.component';
 
@@ -65,6 +67,8 @@ const routes: Routes = [
           { path: 'creationAgent', component: AjoutAgentComponent },
           { path: 'ajoutArme', component: AjoutArmeComponent },
           { path: 'listeArmes', component: ListeArmesComponent },
+          { path: 'ajoutVehicule', component: AjoutVehiculeComponent },
+          { path: 'listeVehicules', component: ListeVehiculesComponent },
           { path: 'ajoutAffaire', component: AjoutAffaireComponent },
           { path: 'listeAffaires', component: ListeAffairesComponent },
           { path: 'suspects', component: SuspectViewComponent }

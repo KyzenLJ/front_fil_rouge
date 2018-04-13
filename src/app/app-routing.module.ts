@@ -49,8 +49,8 @@ const routes: Routes = [
           { path: 'suspect-form', component: SuspectFormComponent },
           { path: 'arme-form', component: ArmeFormComponent },
           { path: 'affaire-form', component: AffaireFormComponent },
-          { path: 'vehicule-form', component: VehiculeFormComponent },
-          { path: 'affaire-form', component: AffaireFormComponent }
+          { path: 'affaire-form', component: AffaireFormComponent },
+          { path: 'vehicule-form', component: VehiculeFormComponent }
         ]
       },
 
@@ -67,10 +67,10 @@ const routes: Routes = [
           { path: 'creationAgent', component: AjoutAgentComponent },
           { path: 'ajoutArme', component: AjoutArmeComponent },
           { path: 'listeArmes', component: ListeArmesComponent },
-          { path: 'ajoutVehicule', component: AjoutVehiculeComponent },
-          { path: 'listeVehicules', component: ListeVehiculesComponent },
           { path: 'ajoutAffaire', component: AjoutAffaireComponent },
           { path: 'listeAffaires', component: ListeAffairesComponent },
+          { path: 'ajoutVehicule', component: AjoutVehiculeComponent },
+          { path: 'listeVehicules', component: ListeVehiculesComponent },
           { path: 'suspects', component: SuspectViewComponent }
         ]
       },

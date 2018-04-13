@@ -1,10 +1,10 @@
 export class Vehicule {
 
     id : number;
-    marqueVehicule : '';
-    modeleVehicule : '';
-    couleurVehicule : '';
-    immatriculationVehicule : '';
+    marqueVehicule : String;
+    modeleVehicule : String;
+    couleurVehicule : String;
+    immatriculationVehicule : String;
   
   }
   

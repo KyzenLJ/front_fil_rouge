@@ -52,6 +52,7 @@ import { AffairesService } from './affaires.service';
 import { ArmesService } from './armes.service';
 import { AjoutVehiculeComponent } from './ajout-vehicule/ajout-vehicule.component';
 import { ListeVehiculesComponent } from './liste-vehicules/liste-vehicules.component';
+import { VehiculesService } from './vehicule.service';
 
 @NgModule({
   declarations: [
@@ -83,8 +84,8 @@ import { ListeVehiculesComponent } from './liste-vehicules/liste-vehicules.compo
     ListeArmesComponent,
     AjoutArmeComponent,
     AjoutAffaireComponent,
-    AjoutVehiculeComponent,
     ListeVehiculesComponent,
+    AjoutVehiculeComponent,
     ],
 
   imports: [
@@ -113,7 +114,7 @@ import { ListeVehiculesComponent } from './liste-vehicules/liste-vehicules.compo
   exports: [CommonModule, MatToolbarModule, MatInputModule, MatTableModule],
 
   providers: [AgentService, ProfilServiceService, AuthService, AuthGuardService,
-  SuspectService, AffairesService, ArmesService],
+  SuspectService, AffairesService, ArmesService, VehiculesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

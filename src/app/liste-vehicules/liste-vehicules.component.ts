@@ -15,7 +15,7 @@ export class ListeVehiculesComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   vehicules: Vehicule[];
-  displayedColumns = ['marqueVehicule', 'modeleVehicule', 'couleurVehicule', 'immatriculationVehicule'];
+  displayedColumns = ['marque', 'modele', 'couleur', 'immatriculation'];
   dataSource;
 
   applyFilter(filterValue: string) {

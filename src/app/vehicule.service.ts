@@ -17,7 +17,7 @@ export class VehiculesService {
 
   constructor(private http: HttpClient) {}
 
-  private vehicule: Vehicule[];
+  private vehicules: Vehicule[];
 
   private vehiculeUrl = 'http://localhost:8080/api/vehicule';
 

@@ -6,24 +6,24 @@
   </div>
   <mat-table #table [dataSource]="dataSource">
 
-    <ng-container matColumnDef="marqueVeicule">
+    <ng-container matColumnDef="marque">
       <mat-header-cell *matHeaderCellDef> Marque </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{ element.marqueVehicule}} </mat-cell>
+      <mat-cell *matCellDef="let element"> {{ element.marque }} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="modeleVehicule">
+    <ng-container matColumnDef="modele">
       <mat-header-cell *matHeaderCellDef> Modèle </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{ element.modeleVehicule }} </mat-cell>
+      <mat-cell *matCellDef="let element"> {{ element.modele }} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="couleurVehicule">
+    <ng-container matColumnDef="couleur">
       <mat-header-cell *matHeaderCellDef> Couleur </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{ element.couleurVehicule}} </mat-cell>
+      <mat-cell *matCellDef="let element"> {{ element.couleur }} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="immatriculationVehicule">
+    <ng-container matColumnDef="immatriculation">
       <mat-header-cell *matHeaderCellDef> Immatriculation </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{ element.immatriculationVehicule}} </mat-cell>
+      <mat-cell *matCellDef="let element"> {{ element.immatriculation }} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="edit">

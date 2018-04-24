@@ -15,7 +15,7 @@ export class ListeVehiculesComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   vehicules: Vehicule[];
-  displayedColumns = ['marque', 'modele', 'couleur', 'immatriculation'];
+  displayedColumns = ['marque', 'modele', 'couleur', 'immatriculation', 'edit' , 'delete'];
   dataSource;
 
   applyFilter(filterValue: string) {
@@ -27,10 +27,24 @@ export class ListeVehiculesComponent implements OnInit {
   constructor(private vehiculeService: VehiculesService) { }
 
   ngOnInit() {
+    this.loadData();
+  }
+
+  loadData(){
     this.vehiculeService.getAllVehicule().subscribe(
-      data  => { this.dataSource = new MatTableDataSource(data); 
-      this.dataSource.paginator = this.paginator; }
+      data  =>  this.dataSource = new MatTableDataSource(data)
+      )
+  }
+
+  onDelete(id: number) {
+    console.log(id);
+    this.vehiculeService.deleteVehicule(id).subscribe(
+      data => this.loadData()
+       // () => this.router.navigate(['../'], {relativeTo : this.router})
     );
+  
+    
+
   }
 
 

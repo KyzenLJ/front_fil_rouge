@@ -1,0 +1,43 @@
+<div class="row">
+
+  <div class="col-12">
+    <h1>SUPPRESSION D'UN VEHICULE</h1>
+  </div>
+
+</div>
+
+<form>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-12">
+
+        <h3>Choisissez un vehicule</h3>
+
+        <div class="text-center">
+
+          <mat-form-field>
+            <mat-select placeholder="Vehicule">
+              <mat-option *ngFor="let vehicule of vehicules" [value]="vehicule" (click)="vehiculeSelect(vehicule)">
+                {{ vehicule.marque }} {{vehicule.modele}} {{vehicule.couleur}} {{vehicule.immatriculation}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        </div>
+
+      </div>
+      
+      <div class="col-12 text-center">
+
+        <input type="submit" class="btn btn-danger justify-content-center" (click)="deleteVehicule()" value="Suppression du vehicule"> 
+
+      </div>
+
+    </div>
+
+  </div>
+
+</form>

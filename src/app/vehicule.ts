@@ -6,5 +6,11 @@ export class Vehicule {
     couleur : String;
     immatriculation : String;
   
+    constructor(a,b,c,d){
+      this.marque=a;
+      this.modele = b;
+      this.couleur= c;
+      this.immatriculation=d;
+    }
   }
   

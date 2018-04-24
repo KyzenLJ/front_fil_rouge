@@ -1,0 +1,33 @@
+<div *ngIf="vehicule" class="col-sm-8 col-sm-offset-2">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="row">
+      <div class="information col-md-5">
+        <div class="form-group">
+          <label for="marque">Marque</label>
+          <input type="text" class="form-control" [ngModel]="vehicule?.marque" id="marque" name="marque" required>
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="modele">Modèle</label>
+            <input type="text" class="form-control" id="modele" name="modele" [ngModel]="vehicule?.modele" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="couleur">Couleur</label>
+            <input type="text" class="form-control" id="couleur" name="couleur" [ngModel]="vehicule?.couleur" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="immatriculation">Immatriculation</label>
+            <input type="text" class="form-control" id="immatriculation" name="immatriculation" [ngModel]="vehicule?.immatriculation"
+              required>
+          </div>
+        </div>
+      </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      <a class="btn btn-default" routerLink="../">Retour a la liste</a>
+  </form>
+  </div>

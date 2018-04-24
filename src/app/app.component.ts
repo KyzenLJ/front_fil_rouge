@@ -3,8 +3,6 @@ import { AgentService } from './agent.service';
 import { Agent } from './agent';
 
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

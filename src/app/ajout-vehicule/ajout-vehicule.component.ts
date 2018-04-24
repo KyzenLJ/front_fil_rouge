@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators, AbstractControl, FormControl, NgFor
 import { Vehicule } from '../vehicule';
 import { VehiculesService } from '../vehicule.service';
 import { Router } from '@angular/router';
+import { error } from 'util';
 
 
 
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./ajout-vehicule.component.css']
 })
 export class AjoutVehiculeComponent implements OnInit {
-  vehicule: Vehicule = new Vehicule();
+  vehicule: Vehicule ;
 
   ngOnInit(): void {
 
@@ -25,9 +26,8 @@ export class AjoutVehiculeComponent implements OnInit {
     console.log(this.vehicule);
     this.vehiculesService.creationVehicule(this.vehicule)
     .subscribe(data => {
-      alert('Le véhicule a bien été ajoutée');
-
-  });
+      alert('Le véhicule a bien été ajouté');
+});
 }
 
 }

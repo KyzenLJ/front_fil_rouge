@@ -32,6 +32,8 @@ import { AjoutVehiculeComponent } from './ajout-vehicule/ajout-vehicule.componen
 import { ListeVehiculesComponent } from './liste-vehicules/liste-vehicules.component';
 import { ListeAffairesComponent } from './liste-affaires/liste-affaires.component';
 import { AjoutAffaireComponent } from './ajout-affaire/ajout-affaire.component';
+import { VehiculeInfoComponent } from './vehicule-info/vehicule-info.component';
+import { ModifierVehiculeComponent } from './modifier-vehicule/modifier-vehicule.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/auth', pathMatch: 'full' },
@@ -71,6 +73,7 @@ const routes: Routes = [
           { path: 'listeAffaires', component: ListeAffairesComponent },
           { path: 'ajoutVehicule', component: AjoutVehiculeComponent },
           { path: 'listeVehicules', component: ListeVehiculesComponent },
+          { path: 'listeVehicules/:id', component: ModifierVehiculeComponent },
           { path: 'suspects', component: SuspectViewComponent }
         ]
       },

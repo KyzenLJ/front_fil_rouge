@@ -53,6 +53,9 @@ import { ArmesService } from './armes.service';
 import { AjoutVehiculeComponent } from './ajout-vehicule/ajout-vehicule.component';
 import { ListeVehiculesComponent } from './liste-vehicules/liste-vehicules.component';
 import { VehiculesService } from './vehicule.service';
+import { SupprimerVehiculeComponent } from './supprimer-vehicule/supprimer-vehicule.component';
+import { VehiculeInfoComponent } from './vehicule-info/vehicule-info.component';
+import { ModifierVehiculeComponent } from './modifier-vehicule/modifier-vehicule.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +89,9 @@ import { VehiculesService } from './vehicule.service';
     AjoutAffaireComponent,
     ListeVehiculesComponent,
     AjoutVehiculeComponent,
+    SupprimerVehiculeComponent,
+    VehiculeInfoComponent,
+    ModifierVehiculeComponent,
     ],
 
   imports: [

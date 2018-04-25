@@ -24,9 +24,8 @@ export class VehiculesService {
 
   public creationVehicule (vehicule : Vehicule) {
 
-    console.log('Création du véhicule');
     return this.http.post<Vehicule>(this.vehiculeUrl, vehicule, httpOptions);
-   
+       
   }
 
   getVehiculeFromServer() {

@@ -4,6 +4,7 @@ import { ProfilServiceService } from '../profil-service.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { VehiculesService } from '../vehicule.service';
 import { Vehicule } from '../vehicule';
+import {MatTableDataSource,  MatDialog,  MatDialogConfig,  MatSort,  MatSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-modifier-vehicule',
@@ -20,7 +21,7 @@ export class ModifierVehiculeComponent implements OnInit {
   erreur = false;
   majVehicule;
 
-  constructor(private route: ActivatedRoute, private router: Router, private vehiculeService: VehiculesService) { }
+  constructor( private snackBar:MatSnackBar, private route: ActivatedRoute, private router: Router, private vehiculeService: VehiculesService) { }
 
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');
@@ -44,11 +45,16 @@ export class ModifierVehiculeComponent implements OnInit {
     console.log(JSON.stringify(this.majVehicule));
     if (!this.erreur) {
       this.vehiculeService.updateVehicule(this.vehicule.id, this.majVehicule).subscribe(
-        (data) => this.router.navigateByUrl('/index/gestion/listeVehicules')
+        result => this.router.navigateByUrl('/index/gestion/listeVehicules'),
+        error => {this.afficherMessage('', 'Immatriculation déjà saisie pour un autre véhicule'); }
       );
     }
   }
-
+  afficherMessage(message:string, erreur: string){
+    this.snackBar.open(message,erreur, {
+      duration: 2000,
+    });
+   }
 
   loadVehicules(id: number) {
     this.vehiculeService.getVehicule(id).subscribe(

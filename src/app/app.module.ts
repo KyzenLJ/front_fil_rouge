@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatTableModule, MatToolbarModule, MatPaginator, MatPaginatorModule, MatMenuModule, MatIconModule } from '@angular/material';
-
+import { AlertsModule } from 'angular-alert-module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 
@@ -24,7 +24,7 @@ import { FormControl, FormGroup, FormBuilder, FormsModule } from '@angular/forms
 import { ReactiveFormsModule} from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatFormFieldModule, MatInputModule, MatCheckboxModule, MatRadioModule } from '@angular/material';
+import { MatSnackBarModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatRadioModule } from '@angular/material';
 import { Page404Component } from './page-404/page-404.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
@@ -114,6 +114,9 @@ import { ModifierVehiculeComponent } from './modifier-vehicule/modifier-vehicule
     CommonModule,
     MatPaginatorModule,
     MatMenuModule,
+    MatSnackBarModule,
+    AlertsModule.forRoot(),
+
     MatIconModule
 
   ],

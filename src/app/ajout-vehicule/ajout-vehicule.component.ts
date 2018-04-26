@@ -45,7 +45,7 @@ export class AjoutVehiculeComponent implements OnInit {
 
    afficherMessage(message:string, erreur: string){
     this.snackBar.open(message,erreur, {
-      duration: 2000,
+      duration: 3000,
     });
    }
 

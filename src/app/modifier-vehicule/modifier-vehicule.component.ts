@@ -26,13 +26,7 @@ export class ModifierVehiculeComponent implements OnInit {
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');
     this.loadVehicules(this.id);
-    // console.log(this.agent);
-    /*const libelle = this.agent.profil.libelle;
-    console.log(libelle + 'coucou');
-    this.profilService.getProfil(libelle).subscribe(
-      pro => this.profilSelected = pro
-      , err => this.errText = 'la requete a echoué' );
-      console.log(this.errText);*/
+
   }
 
   onSubmit(form: NgForm) {
@@ -52,7 +46,7 @@ export class ModifierVehiculeComponent implements OnInit {
   }
   afficherMessage(message:string, erreur: string){
     this.snackBar.open(message,erreur, {
-      duration: 2000,
+      duration: 3000,
     });
    }
 

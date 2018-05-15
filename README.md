@@ -1,13 +1,13 @@
 # MIST
 
-Ce projet a été realisé en équipe, il a pour but de servir a gérer tout ce qui est lié a une affaire policière
+Ce projet a ï¿½tï¿½ realisï¿½ en ï¿½quipe, il a pour but de servir a gï¿½rer tout ce qui est liï¿½ a une affaire policiï¿½re
 
-## prérequis
+## prï¿½requis
 * ouvrir GitBash et cloner https://github.com/KyzenLJ/front_fil_rouge.git
 * Installer NodeJs : https://nodejs.org/en/
-* Une fois ce dernier installé, ouvrir un terminal de commande et rentrer : "npm install -g @angular/cli"
-* Avoir installé un serveur de données(Mysql) et un SGBDR (workbench), procedure expliquée dans le repo spring boot associé
-* Avoir installé le back (repo spring boot là : https://github.com/KyzenLJ/Crud_fil_rouge
+* Une fois ce dernier installï¿½, ouvrir un terminal de commande et rentrer : "npm install -g @angular/cli"
+* Avoir installï¿½ un serveur de donnï¿½es(Mysql) et un SGBDR (workbench), procedure expliquï¿½e dans le repo spring boot associï¿½
+* Avoir installï¿½ le back (repo spring boot lï¿½ : https://github.com/KyzenLJ/Crud_fil_rouge
 
 
 ## Installation
@@ -16,15 +16,14 @@ Ce projet a été realisé en équipe, il a pour but de servir a gérer tout ce qui e
 * se deplacer dans le dossier contenant le projet
 * saisir un : npm install
 * saisir un : ng serve
-* Attention ! Le serveur springboot doit etre demarré en parallèle afin d'accéder aux données
+* Attention ! Le serveur springboot doit etre demarrï¿½ en parallï¿½le afin d'accï¿½der aux donnï¿½es
 
 
 ## contribution Personnelle 
 
-Dans ce projet, j'ai realisé la partie gestion des véhicules :
- * affichage de la liste des véhicules et ajout de véhicule en base de données
+Dans ce projet, j'ai realisï¿½ la partie gestion des vï¿½hicules :
+ * affichage de la liste des vï¿½hicules et ajout de vï¿½hicule en base de donnï¿½es
 
-Le temps m'a hélas manqué pour finir le développement des fonctionnalités de suppression et de modification.
-Toutefois, celle-ci sont fonctionnelle sur le back, via des outils comme Postman.
+Pour afficher les wireframes, il est nÃ©cessaire d'installer Balsamiq et cliquer sur le document MOCK_UP__SEQUENCE_MIST.bmpr
 
-Bien que la coordination n'ait pas été le point fort de l'équipe, je tiens à remercier chacun des membre pour son travail qui m'a permis de livrer ce travail.
+Bien que la coordination n'ait pas ï¿½tï¿½ le point fort de l'ï¿½quipe, je tiens ï¿½ remercier chacun des membre pour son travail qui m'a permis de livrer ce travail.
